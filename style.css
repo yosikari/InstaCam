@@ -1,5 +1,7 @@
 /* GOOGLE FONT - poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* logo */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root {
     --primary-color-hue: 252;
@@ -144,6 +146,11 @@ main .container {
     grid-template-columns: 18vw auto 20vw;
     column-gap: 2rem;
     position: relative;
+}
+
+/* LOGO */
+.logo {
+    font-family: 'Lobster', cursive;
 }
 
 /******************* LEFT *********************/
@@ -780,10 +787,12 @@ main .container .right {
     .customize-theme .card {
         width: 92vw;
     }
-    .customize-theme .card div span{
+
+    .customize-theme .card div span {
         margin: 0 auto;
     }
-    .customize-theme .card div h5{
+
+    .customize-theme .card div h5 {
         display: none;
     }
 }
