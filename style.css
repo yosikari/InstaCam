@@ -738,7 +738,7 @@ main .container .right {
         gap: 0;
     }
 
-    main .container .left{
+    main .container .left {
         grid-column: 3/4;
         position: fixed;
         bottom: 0;
@@ -746,24 +746,24 @@ main .container .right {
     }
 
     /* NOTIFICATION POPUP */
-    .left .notifications-popups{
+    .left .notifications-popup {
         position: absolute;
         left: -20rem;
         width: 20rem;
     }
 
-    .left .notifications-popups::before{
+    .left .notifications-popup::before {
         position: absolute;
         top: 1.3rem;
-        left: calc(20rem-.6rem);
+        left: calc(20rem - 0.6rem);
         display: block;
     }
 
-    main .container .middle{
+    main .container .middle {
         grid-column: 1/3;
     }
 
-    main .container .right{
+    main .container .right {
         display: none;
     }
 }
