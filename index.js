@@ -9,6 +9,10 @@ const messages = document.querySelector('.messages')
 const message = messages.querySelectorAll('.message')
 const messageSearch = document.querySelector('#message-search')
 
+// THEME
+const theme = document.querySelector('#theme')
+const themeModal = document.querySelector('.customize-theme')
+
 //remove active class for all menu items
 const changeActiveItem = () => {
     menuItems.forEach(item => {
@@ -61,4 +65,17 @@ messagesNotification.addEventListener('click', () => {
 
 // THEME DISPLAY CUSTOMIZATION
 
+//open modal
+const openThemeModal = () => {
+    themeModal.style.display = 'grid'
+}
 
+//close modal 
+const closeThemeModal = (e) => {
+    if (e.target.classList.contains('customize-theme')) {
+        themeModal.style.display = 'none'
+    }
+}
+
+themeModal.addEventListener('click', closeThemeModal)
+theme.addEventListener('click', openThemeModal)

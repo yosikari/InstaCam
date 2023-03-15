@@ -569,6 +569,7 @@ main .container .right {
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
 /*********** FONT SIZE ***********/
@@ -724,6 +725,10 @@ main .container .right {
         display: none;
     }
 
+    .customize-theme .card {
+        width: 80vw;
+    }
+
 }
 
 /*************************** MEDIA QUERIES MOBILE ****************************/
@@ -764,6 +769,16 @@ main .container .right {
     }
 
     main .container .right {
+        display: none;
+    }
+
+    .customize-theme .card {
+        width: 92vw;
+    }
+    .customize-theme .card div span{
+        margin: 0 auto;
+    }
+    .customize-theme .card div h5{
         display: none;
     }
 }
